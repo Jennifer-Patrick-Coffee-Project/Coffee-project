@@ -84,6 +84,8 @@ body {
 
 #tumbler {
     max-height: 75%;
+    width: 90%;
+    padding-left: 2em;
 }
 #big-mug {
     width: 90%;
