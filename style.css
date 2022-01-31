@@ -35,3 +35,6 @@ ul {
 .roast {
     color: #848487;
 }
+ .coffee_display {
+     height: 100%!important;
+ }

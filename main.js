@@ -2,10 +2,10 @@
 
 // create coffee table-like entries
 function renderCoffee(coffee) {
-    let html = '<div class="coffee_display d-block mt-4">';
+    let html = '<div class="coffee_display col-6 mt-4">';
     html += '<div class="d-flex align-items-baseline">';
     html += '<h2 class="name mr-3">' + coffee.name + '</h2>';
-    html += '<p class="roast mr-5">' + coffee.roast + '</p>';
+    html += '<p class="roast mr-4">' + coffee.roast + '</p>';
     html += '</div>'
     html += '</div>'
     return html;
@@ -49,7 +49,6 @@ function newCoffee (id, name, roast) {
         let coffee = {id, name, roast};
         coffees.push(coffee);
     }
-    // localStorage.setItem(name, roast); Not working
     coffee_display.innerHTML = renderCoffees(coffees);
 }
 
