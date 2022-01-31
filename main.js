@@ -85,8 +85,7 @@ let coffeeName = document.querySelector('#coffee-name');
 let newCoffeeName = document.querySelector('#newCoffeeName');
 let newCoffeeRoast = document.querySelector('#newCoffeeRoast');
 let submitToo = document.querySelector('#submitToo');
-let searchbutton = document.querySelector('#search-button');
-let merch = document.querySelector('merch');
+
 
 
 coffee_display.innerHTML = renderCoffees(coffees);
@@ -95,5 +94,4 @@ coffee_display.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 submitToo.addEventListener('click', newCoffee);
 coffeeName.addEventListener('keyup', updateCoffees);
-searchbutton.addEventListener('click', updateCoffees);
-merch.addEventListener('click', updateviews);
+
