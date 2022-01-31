@@ -7,7 +7,6 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
-/*<<<<<<< HEAD*/
 
 ul {
     list-style: none;
@@ -39,7 +38,6 @@ ul {
  .coffee_display {
      height: 100%!important;
  }
-/*=======*/
 .logo {
     height: 120px;
     width: 120px;
@@ -55,4 +53,6 @@ ul {
 #navbar-nav {
     color: #0A5E5B;
 }
->>>>>>> nav-bar
+.submit {
+    background-color: #0d673a;
+}
