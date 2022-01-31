@@ -26,6 +26,7 @@ ul {
     padding-left: 0;
     padding-top: 0;
     line-height: 1;
+    background-color: transparent!important;
 }
 
 .form-control {
@@ -45,6 +46,8 @@ ul {
 .jumbotron {
     background: url(./images/coffee.png) no-repeat;
     background-size: cover;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 .bg-light {
     opacity: 80%;
@@ -55,4 +58,27 @@ ul {
 }
 .submit {
     background-color: #0d673a;
+    border: none;
 }
+
+.primary_cont {
+    font-family: 'Fredericka the Great', sans-serif;
+    color: #FFFFFF;
+}
+
+.submit:hover {
+    background-color: #072815;
+}
+
+.submit:focus {
+    background-color: #072815;
+}
+
+.card {
+    background-color: transparent!important;
+}
+
+body {
+    background-image: url("images/img.png");
+}
+
