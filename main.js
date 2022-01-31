@@ -2,10 +2,10 @@
 
 // create coffee table-like entries
 function renderCoffee(coffee) {
-    let html = '<div class="coffee_display col-6 mt-4">';
+    let html = '<div class="coffee_display col-xs-12 col-lg-6 mt-4">';
     html += '<div class="d-flex align-items-baseline">';
     html += '<h2 class="name mr-3">' + coffee.name + '</h2>';
-    html += '<p class="roast mr-4">' + coffee.roast + '</p>';
+    html += '<p class="roast">' + coffee.roast + '</p>';
     html += '</div>'
     html += '</div>'
     return html;
@@ -80,6 +80,11 @@ let coffees = [
     {id: 12, name: 'Viennese', roast: 'dark'},
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
+    {id: 15, name: "Azathoth's Spawn", roast: 'extra-dark'},
+    {id: 16, name: "Hastur's Revenge", roast: 'extra-dark'},
+    {id: 16, name: "Answer the Call", roast: 'extra-dark'},
+    {id: 17, name: "Chtonic Tonic", roast: 'extra-dark'},
+    {id: 18, name: "The Coffee That Should Not Be", roast: 'extra-dark'},
 ];
 
 // set up Query Selectors
