@@ -7,3 +7,18 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.logo {
+    height: 120px;
+    width: 120px;
+}
+.jumbotron {
+    background: url(./images/coffee.png) no-repeat;
+    background-size: cover;
+}
+.bg-light {
+    opacity: 80%;
+}
+
+#navbar-nav {
+    color: #0A5E5B;
+}
