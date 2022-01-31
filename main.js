@@ -54,16 +54,14 @@ function newCoffee (id, name, roast) {
 // function does not work
 // function newCoffee (id, name, roast) {
 //     if (newCoffeeName.value !== "") {
-//         localStorage.setItem(newCoffeeName.value, newCoffeeRoast.value);
-//         name = localStorage.getItem(newCoffeeName.value);
-//         roast =localStorage.getItem(newCoffeeRoast.value);
+//         name = localStorage.setItem(newCoffeeName.value);
+//         roast =localStorage.setItem(newCoffeeRoast.value);
 //         id = coffees.length + 1;
 //         let coffee = {id, name, roast};
 //         coffees.push(coffee);
 //     }
 //     coffee_display.innerHTML = renderCoffees(coffees);
 // }
-
 
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
