@@ -17,32 +17,33 @@ improvements to it.
 
 - Update the HTML
 
-    Tables are a little old school, you need to refactor the code so that each
+    ~~Tables are a little old school, you need to refactor the code so that each
     coffee is displayed in a `div` that contains a heading displaying the coffee
     name, and the type of roast in a paragraph. Don't display the ids, these are
-    only for our application's internal use
+    only for our application's internal use~~
 
-- When the page loads, the coffees should be sorted by their ids in ascending
-  order
+~~- When the page loads, the coffees should be sorted by their ids in ascending
+  order~~
 
-- Add functionality to search through the coffees by name, and display only the
+~~- Add functionality to search through the coffees by name, and display only the
   coffees that match the provided search term (You will need to add an input
-  field to the existing form for this)
+  field to the existing form for this)~~
 
-- Add functionality to update the displayed coffee as the user types into the
-  search box, or as soon as they select an option from the select.
+~~- Add functionality to update the displayed coffee as the user types into the
+  search box, or as soon as they select an option from the select.~~
 
 **Bonus**
 
-- Add an option to select all roasts for roast type
+~~- Add an option to select all roasts for roast type~~
 
-- Make your name search case insensitive
+~~- Make your name search case insensitive~~
 
-- Allow the user to add new coffees to the page
+~~- Allow the user to add new coffees to the page
 
     Create another form on the page that has an input for the coffee name, and
     a select to choose the coffee roast. When the form is submitted, the new
-    coffee should appear on the page. (*Note that any new coffees you add will
+    coffee should appear on the page.~~ 
+- (*Note that any new coffees you add will
     be lost when you refresh the page, for an extra challenge, research
     how `localStorage` works and see if you can find a way to persist the data*)
 
