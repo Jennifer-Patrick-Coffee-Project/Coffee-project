@@ -42,11 +42,13 @@ function updateCoffees(e) {
 
 // User added new coffees to the list
 function newCoffee (id, name, roast) {
-    name = newCoffeeName.value;
-    roast = newCoffeeRoast.value;
-    id = coffees.length + 1;
-    let coffee = {id, name, roast};
-    coffees.push(coffee);
+    if (newCoffeeName.value !== "") {
+        name = newCoffeeName.value;
+        roast = newCoffeeRoast.value;
+        id = coffees.length + 1;
+        let coffee = {id, name, roast};
+        coffees.push(coffee);
+    }
     // localStorage.setItem(name, roast); Not working
     coffee_display.innerHTML = renderCoffees(coffees);
 }
