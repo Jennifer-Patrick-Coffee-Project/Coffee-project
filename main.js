@@ -43,7 +43,6 @@ function updateCoffees(e) {
 // User added new coffees to the list
 function newCoffee (id, name, roast) {
     if (newCoffeeName.value !== "") {
-        // localStorage.setItem(newCoffeeName.value, newCoffeeRoast.value); add item to local storage
         name = newCoffeeName.value;
         roast = newCoffeeRoast.value;
         id = coffees.length + 1;
@@ -52,6 +51,18 @@ function newCoffee (id, name, roast) {
     }
     coffee_display.innerHTML = renderCoffees(coffees);
 }
+// function does not work
+// function newCoffee (id, name, roast) {
+//     if (newCoffeeName.value !== "") {
+//         localStorage.setItem(newCoffeeName.value, newCoffeeRoast.value);
+//         name = localStorage.getItem(newCoffeeName.value);
+//         roast =localStorage.getItem(newCoffeeRoast.value);
+//         id = coffees.length + 1;
+//         let coffee = {id, name, roast};
+//         coffees.push(coffee);
+//     }
+//     coffee_display.innerHTML = renderCoffees(coffees);
+// }
 
 
 
