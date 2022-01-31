@@ -32,7 +32,10 @@ ul {
 .form-control {
     height: 38px;
 }
-
+#coffee-name {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
 .roast {
     color: #848487;
 }
