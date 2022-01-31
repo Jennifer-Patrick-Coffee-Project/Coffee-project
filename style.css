@@ -82,3 +82,26 @@ body {
     background-image: url("images/img.png");
 }
 
+#tumbler {
+    max-height: 75%;
+}
+#big-mug {
+    width: 90%;
+}
+#merch {
+    margin-top: 10em;
+}
+#gift-cards, .btn-dark {
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    margin: 3em;
+    padding: 3em;
+    border-radius: 35%;
+    font-family: 'Fredericka the Great', sans-serif;
+}
+.price {
+    color: #FFFFFF;
+    font-family: 'Fredericka the Great', sans-serif;
+    text-align: center;
+}

@@ -51,20 +51,9 @@ function newCoffee (id, name, roast) {
     }
     coffee_display.innerHTML = renderCoffees(coffees);
 }
-// function does not work
-// function newCoffee (id, name, roast) {
-//     if (newCoffeeName.value !== "") {
-//         name = localStorage.setItem(newCoffeeName.value);
-//         roast =localStorage.setItem(newCoffeeRoast.value);
-//         id = coffees.length + 1;
-//         let coffee = {id, name, roast};
-//         coffees.push(coffee);
-//     }
-//     coffee_display.innerHTML = renderCoffees(coffees);
-// }
 
 
-// from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -97,6 +86,7 @@ let newCoffeeName = document.querySelector('#newCoffeeName');
 let newCoffeeRoast = document.querySelector('#newCoffeeRoast');
 let submitToo = document.querySelector('#submitToo');
 let searchbutton = document.querySelector('#search-button');
+let merch = document.querySelector('merch');
 
 
 coffee_display.innerHTML = renderCoffees(coffees);
@@ -106,3 +96,4 @@ submitButton.addEventListener('click', updateCoffees);
 submitToo.addEventListener('click', newCoffee);
 coffeeName.addEventListener('keyup', updateCoffees);
 searchbutton.addEventListener('click', updateCoffees);
+merch.addEventListener('click', updateviews);
