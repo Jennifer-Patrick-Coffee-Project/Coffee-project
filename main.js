@@ -1,6 +1,6 @@
 "use strict"
 
-
+// create coffee table-like entries
 function renderCoffee(coffee) {
     let html = '<div class="coffee_display d-block mt-4">';
     html += '<div class="d-flex align-items-baseline">';
@@ -19,6 +19,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
+// update the displayed coffee from user input
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let selectedRoast = roastSelection.value;
@@ -39,6 +40,7 @@ function updateCoffees(e) {
     coffee_display.innerHTML = renderCoffees(filteredCoffees);
 }
 
+// User added new coffees to the list
 function newCoffee (id, name, roast) {
     name = newCoffeeName.value;
     roast = newCoffeeRoast.value;
@@ -46,7 +48,6 @@ function newCoffee (id, name, roast) {
     let coffee = {id, name, roast};
     coffees.push(coffee);
     // localStorage.setItem(name, roast); Not working
-    console.log(coffee) //test to see if id is correct//
     coffee_display.innerHTML = renderCoffees(coffees);
 }
 
@@ -70,6 +71,7 @@ let coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+// set up Query Selectors
 let coffee_display = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
@@ -81,6 +83,7 @@ let submitToo = document.querySelector('#submitToo')
 
 coffee_display.innerHTML = renderCoffees(coffees);
 
+// Add event listeners
 submitButton.addEventListener('click', updateCoffees);
 submitToo.addEventListener('click', newCoffee);
 coffeeName.addEventListener('keyup', updateCoffees)
