@@ -73,8 +73,7 @@ let coffees = [
     {id: 16, name: "Hastur's Revenge", roast: 'extra-dark'},
     {id: 16, name: "Call of Brewhulu", roast: 'extra-dark'},
     {id: 17, name: "Chtonic Tonic", roast: 'extra-dark'},
-    {id: 18, name: "The Coffee That Should Not Be", roast: 'extra-dark'},
-    {id: 19, name: 'Dark Abyss', roast: "extra-dark"},
+    {id: 18, name: 'Dark Abyss', roast: "extra-dark"},
 ];
 
 // set up Query Selectors
