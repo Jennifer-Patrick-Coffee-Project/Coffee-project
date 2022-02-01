@@ -1,5 +1,7 @@
 "use strict"
 
+
+
 // create coffee table-like entries
 function renderCoffee(coffee) {
     let html = '<div class="coffee_display col-xs-12 col-lg-6 mt-4">';
@@ -84,6 +86,7 @@ let coffeeName = document.querySelector('#coffee-name');
 let newCoffeeName = document.querySelector('#newCoffeeName');
 let newCoffeeRoast = document.querySelector('#newCoffeeRoast');
 let submitToo = document.querySelector('#submitToo');
+let openNav = document.querySelector('#openNav')
 
 
 
@@ -93,4 +96,18 @@ coffee_display.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 submitToo.addEventListener('click', newCoffee);
 coffeeName.addEventListener('keyup', updateCoffees);
+openNav.addEventListener('click', openNavPage);
 
+
+//checkout navs
+
+function openNavPage() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("body2").style.marginRight = "100%";
+    document.getElementById("mySidenav").style.display = "block"
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("body2").style.marginRight= "0";
+}

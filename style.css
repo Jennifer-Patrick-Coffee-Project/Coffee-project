@@ -59,6 +59,9 @@ ul {
 #navbar-nav {
     color: #0A5E5B;
 }
+
+
+
 .submit {
     background-color: #0d673a;
     border: none;
@@ -92,6 +95,7 @@ body {
     background: url(images/tentacle-octopus-drawing-sticker-tentacles-5ecf9655bc80941384da0f03ab763a41.png);
     background-repeat: no-repeat;
     background-position: bottom 15% left;
+    transition: margin-right .2s;
 }
 
 #tumbler {
@@ -272,6 +276,49 @@ body {
     color: #0d673a;
 
 }
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f8f7f7;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidenav a:hover {
+    color: rgba(3, 73, 39, 0.73);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#mySidenav {
+    display: none;
+}
+
 
 
 
