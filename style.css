@@ -108,6 +108,13 @@ body {
 #merch {
     margin-top: 10em;
 }
+#merch >h2 {
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    font-family: 'Fredericka the Great', sans-serif;
+}
 
 #gift-cards, .btn-dark {
     color: #FFFFFF;
