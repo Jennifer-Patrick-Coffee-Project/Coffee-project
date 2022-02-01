@@ -13,212 +13,174 @@
 </head>
 <body>
 <div id="body2">
-    <!--start navbar-->
-    <div class="jumbotron">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo-image"><img src="images/logo.png" alt="Cthulhu" class="logo"></div>
-                <div style="color: #592F0F; font-weight: bold;  text-shadow: .5px .5px black; padding: 1em; font-size:25px">
-                    The Elder Bean
+<!--start navbar-->
+<div class="jumbotron">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo-image"><img src="images/logo.png" alt="Cthulhu" class="logo"></div>
+            <div style="color: #592F0F; font-weight: bold;  text-shadow: .5px .5px black; padding: 1em; font-size:25px">
+                The Elder Bean
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="."
+                           style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#merch"
+                           style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Merchandise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#gift-cards"
+                           style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Gift cards</a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <label for="coffee-name"></label><input type="text" class="form-control" id="coffee-name"
+                                                            placeholder="search">
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="."
-                               style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="#merch"
-                               style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Merchandise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="#gift-cards"
-                               style="color: #1c7344; font-weight: bold; text-shadow: .5px .5px grey"> Gift cards</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end of navbar-->
+<div class="container-fluid primary_cont" id="main-coffees">
+    <div class="row">
+        <!--        Where the coffees will render-->
+        <div class="col-6 row mx-auto coffee_display" id="coffees">
+        </div>
+        <div class="col-6 coffee_selectors">
+            <!--            Card for selecting kinds of coffee-->
+            <div class="card">
+                <h2 class="mx-auto mt-3">Browse Our Unnaturally Strong Brews</h2>
+                <div class="card-body">
+                    <h5 class="card-title mb-0">Roast</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label for="roast-selection"></label>
+                            <select class="form-control form-control-sm" id="roast-selection">
+                                <option>--select a roast--</option>
+                                <option>all</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                                <option>extra-dark</option>
+                            </select>
                         </li>
                     </ul>
+                </div>
+                <a href="#" class="btn btn-primary submit" id="submit" type="submit">Submit</a>
+            </div>
+            <hr>
+            <!--            Card for adding Coffees-->
+            <div class="card">
+                <h2 class="mx-auto">Add a Coffee</h2>
+                <div class="card-body">
+                    <h5 class="card-title mb-0">Roast</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label for="newCoffeeRoast"></label>
+                            <select class="form-control form-control-sm" id="newCoffeeRoast">
+                                <option>--select a roast--</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                                <option>extra-dark</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <h5>Coffee Name</h5>
                     <div class="input-group">
-                        <label for="coffee-name"></label><input type="text" class="form-control" id="coffee-name"
-                                                                placeholder="search">
+                        <label for="newCoffeeName"></label><input type="text" class="form-control" id="newCoffeeName">
                     </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-    <!--end of navbar-->
-    <div class="container-fluid primary_cont" id="main-coffees">
-        <div class="row">
-            <!--        Where the coffees will render-->
-            <div class="col-6 row mx-auto coffee_display" id="coffees">
+                <a href="#" class="btn btn-primary submit" id="submitToo" type="submit">Submit</a>
             </div>
-            <div class="col-6 coffee_selectors">
-                <!--            Card for selecting kinds of coffee-->
-                <div class="card">
-                    <h2 class="mx-auto mt-3">Browse Our Unnaturally Strong Brews</h2>
-                    <div class="card-body">
-                        <h5 class="card-title mb-0">Roast</h5>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <label for="roast-selection"></label>
-                                <select class="form-control form-control-sm" id="roast-selection">
-                                    <option>--select a roast--</option>
-                                    <option>all</option>
-                                    <option>light</option>
-                                    <option>medium</option>
-                                    <option>dark</option>
-                                    <option>extra-dark</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-primary submit" id="submit" type="submit">Submit</a>
+            <br>
+            <div class="card">
+                <h2 class="mx-auto">Choose Your Size</h2>
+                <div class="card-body">
+                    <h5 class="card-title mb-0">Size</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label for="coffeeSizes"></label>
+                            <select class="form-control form-control-sm" id="coffeeSizes">
+                                <option>--select a size--</option>
+                                <option>small</option>
+                                <option>medium</option>
+                                <option>large</option>
+                                <option>gallon</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
-                <hr>
-                <!--            Card for adding Coffees-->
-                <div class="card">
-                    <h2 class="mx-auto">Add a Coffee</h2>
-                    <div class="card-body">
-                        <h5 class="card-title mb-0">Roast</h5>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <label for="newCoffeeRoast"></label>
-                                <select class="form-control form-control-sm" id="newCoffeeRoast">
-                                    <option>--select a roast--</option>
-                                    <option>light</option>
-                                    <option>medium</option>
-                                    <option>dark</option>
-                                    <option>extra-dark</option>
-                                </select>
-                            </li>
-                        </ul>
-                        <h5>Coffee Name</h5>
-                        <div class="input-group">
-                            <label for="newCoffeeName"></label><input type="text" class="form-control"
-                                                                      id="newCoffeeName">
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary submit" id="submitToo" type="submit">Submit</a>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="card col-6">
-                        <h2 class="mx-auto">Choose Your Size</h2>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Size</h5>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <label for="coffeeSizes"></label>
-                                    <select class="form-control form-control-sm" id="coffeeSizes">
-                                        <option>--select a size--</option>
-                                        <option>small</option>
-                                        <option>medium</option>
-                                        <option>large</option>
-                                        <option>gallon</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary submit" id="submit-size" type="submit">Submit</a>
-                    </div>
-                    <div class="card col-6">
-                        <h2 class="mx-auto">Choose Your Grind</h2>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Grind</h5>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <label for="coffeeGrind"></label>
-                                    <select class="form-control form-control-sm" id="coffeeGrind">
-                                        <option>--select a style--</option>
-                                        <option>Whole Bean</option>
-                                        <option>Drip Grind</option>
-                                        <option>Espresso Grind</option>
-                                        <option>Turkish Grind</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary submit" id="submit-grind" type="submit">Submit</a>
-                    </div>
-                </div>
+                <a href="#" class="btn btn-primary submit" id="submit-size" type="submit">Submit</a>
             </div>
         </div>
     </div>
-    <div id="merch">
-        <h2>Show Your Chthonic Pride!</h2>
-        <div class="container">
-            <div class="row row-cols-2">
-                <div class="col-6"><img src="images/bigmug.png" id="big-mug" class="img-fluid" alt="ceramic-mug">
-                    <p class="price">$50</p><br></div>
-                <div class="col-6"><br><img src="images/mug.png" class="img-fluid" alt="mug">
-                    <p class="price">$25</p></div>
-                <div class="col-6"><img src="images/tumbler.png" id="tumbler" class="img-fluid" alt="tumbler">
-                    <p class="price">$30</p><br></div>
-                <div class="col-6"><img src="images/coffeebag.png" id="bag" class="img-fluid" alt="coffee-bag">
-                    <p class="price">$25</p><br></div>
-            </div>
+</div>
+<div id="merch">
+    <h2>Show Your Chthonic Pride!</h2>
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col-6"><img src="images/bigmug.png" id="big-mug" class="img-fluid" alt="ceramic-mug"><p class="price">$50</p><br></div>
+            <div class="col-6"><br><img src="images/mug.png" class="img-fluid" alt="mug"><p class="price">$25</p></div>
+            <div class="col-6"><img src="images/tumbler.png" id="tumbler" class="img-fluid" alt="tumbler"><p class="price">$30</p><br></div>
+            <div class="col-6"><img src="images/coffeebag.png" id="bag" class="img-fluid" alt="coffee-bag"><p class="price">$15</p><br></div>
         </div>
     </div>
-    <div id="gift-cards">
-        <h2>Gift Cards</h2>
-        <button type="button" class="btn btn-dark">$5</button>
-        <button type="button" class="btn btn-dark">$10</button>
-        <button type="button" class="btn btn-dark">$20</button>
-        <button type="button" class="btn btn-dark">$100</button>
-    </div>
+</div>
+<div id="gift-cards">
+    <h2 id="gift">Gift Cards</h2>
+    <button type="button" class="btn btn-dark">$5  </button>
+    <button type="button" class="btn btn-dark">$10 </button>
+    <button type="button" class="btn btn-dark">$20 </button>
+    <button type="button" class="btn btn-dark">$100</button>
+</div>
     <audio autoplay controls>
-        <source src="X2Convert.cc%20-%20Metallica%20-%20The%20Call%20of%20Ktulu%20(HD)%20(128%20kbps).mp3"
-                type="audio/mpeg"/>
+        <source src="X2Convert.cc%20-%20Metallica%20-%20The%20Call%20of%20Ktulu%20(HD)%20(128%20kbps).mp3" type="audio/mpeg" />
     </audio>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>About Us</h3>
-                        <p>Designed and implemented by Jennifer Deleon and Patrick Quilty for Code Up - Elixir cohort.
-                            Hire us!</p>
-                    </div>
-                    <div class="col item social"><a href="https://www.facebook.com"><i
-                            class="icon ion-social-facebook"></i></a><a href="https://www.twitter.com"><i
-                            class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com"><i
-                            class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com"><i
-                            class="icon ion-social-instagram"></i></a></div>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
                 </div>
-                <p class="address">210-555-5555 <br>600 Navarro St #600<br> San Antonio, TX 78205</p>
-                <p class="copyright">The Elder Bean © 2022</p>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>About Us</h3>
+                    <p>Designed and implemented by Jennifer Deleon and Patrick Quilty for Code Up - Elixir cohort. Hire us!</p>
+                </div>
+                <div class="col item social"><a href="https://www.facebook.com"><i class="icon ion-social-facebook"></i></a><a href="https://www.twitter.com"><i class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com"><i class="icon ion-social-instagram"></i></a></div>
             </div>
-        </footer>
-    </div>
-    <script src="https://kit.fontawesome.com/86c9f47df0.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+            <p class="address">210-555-5555 <br>600 Navarro St #600<br> San Antonio, TX 78205</p>
+            <p class="copyright">The Elder Bean © 2022</p>
+        </div>
+    </footer>
+</div>
+<script src="https://kit.fontawesome.com/86c9f47df0.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </div>
 </body>
 </html>

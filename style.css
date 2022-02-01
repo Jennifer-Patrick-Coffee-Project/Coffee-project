@@ -125,6 +125,10 @@ body {
     border-radius: 35%;
     font-family: 'Fredericka the Great', sans-serif;
 }
+.btn-dark {
+    width: 10%;
+}
+
 .price {
     color: #00966e;
     text-shadow: .5px .5px #FFFFFF;
