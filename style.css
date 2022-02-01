@@ -95,13 +95,12 @@ body {
 }
 
 #tumbler {
-    max-height: 60%;
-    /*width: 65%;*/
-    padding-left: 8em;
+    max-height: 70%;
+    padding-left: 3em;
 }
 #bag {
-    max-height: 60%;
-    width: 65%;
+    max-height: 80%;
+    width: 95%;
 }
 #big-mug {
     width: 90%;
