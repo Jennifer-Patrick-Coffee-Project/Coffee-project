@@ -83,17 +83,25 @@ ul {
 }
 
 body {
-    background: url(images/tentacle-octopus-drawing-sticker-tentacles-5ecf9655bc80941384da0f03ab763a41.png), url(images/img.png);
-    background-size:  40% 40%, 100% 100%;
+    background: url(images/img.png);
+    background-size:  100% 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: left bottom, center
+    /*background-position: left bottom, center*/
+}
+#body2 {
+    background: url(images/tentacle-octopus-drawing-sticker-tentacles-5ecf9655bc80941384da0f03ab763a41.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 15% left
 }
 
-
 #tumbler {
-    max-height: 75%;
-    width: 90%;
-    padding-left: 2em;
+    max-height: 60%;
+    /*width: 65%;*/
+    padding-left: 8em;
+}
+#bag {
+    max-height: 60%;
+    width: 65%;
 }
 #big-mug {
     width: 90%;
@@ -101,6 +109,7 @@ body {
 #merch {
     margin-top: 10em;
 }
+
 #gift-cards, .btn-dark {
     color: #FFFFFF;
     text-align: center;
