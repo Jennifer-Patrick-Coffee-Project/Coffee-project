@@ -85,13 +85,13 @@ ul {
 body {
     background: url(images/img.png);
     background-size:  100% 100%;
-    background-repeat: no-repeat, no-repeat;
-    /*background-position: left bottom, center*/
+    background-repeat: no-repeat;
+
 }
 #body2 {
     background: url(images/tentacle-octopus-drawing-sticker-tentacles-5ecf9655bc80941384da0f03ab763a41.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom 15% left
+    background-repeat: no-repeat;
+    background-position: bottom 15% left;
 }
 
 #tumbler {
