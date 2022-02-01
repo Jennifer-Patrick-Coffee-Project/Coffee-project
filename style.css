@@ -319,6 +319,10 @@ body {
     display: none;
 }
 
+#payment {
+    padding-left: 0!important;
+}
+
 
 
 
