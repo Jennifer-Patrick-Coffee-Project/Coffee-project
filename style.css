@@ -126,7 +126,7 @@ body {
     font-family: 'Fredericka the Great', sans-serif;
 }
 .btn-dark {
-    width: 10%;
+    width: 8em;
 }
 
 .price {
@@ -250,24 +250,27 @@ body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #1779ba;
+    color: #0d673a;
     right: -20px;
     transition: 0.4s right cubic-bezier(0.38, 0.6, 0.48, 1);
 }
 
 .button-hover-addcart:hover {
-    border-color: #1779ba;
+    border-color: #0d673a;
     background: transparent;
     transition: border-color 0.2s;
 }
 
 .button-hover-addcart:hover span {
     margin-right: 20px;
-    color: #1779ba;
+    color: #0d673a;
+
 }
 
 .button-hover-addcart:hover .fa {
     right: 12px;
+    color: #0d673a;
+
 }
 
 
